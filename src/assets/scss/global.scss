@@ -1,0 +1,18 @@
+// Setup
+@import "./setup/variables";
+@import "./setup/functions";
+@import "./setup/mixins";
+@import "./setup/typography";
+
+// Basics
+@import "./basics/helpers";
+@import "./basics/base";
+@import "./basics/layout";
+
+// Views
+@import "./views/home";
+
+// Componenets
+@import "./componenets/donationForm";
+@import "./componenets/donationBtnsList";
+@import "./componenets/donationPaymentsCheckbox";

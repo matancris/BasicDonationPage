@@ -1,0 +1,17 @@
+.checkbox-wrapper {
+    margin-bottom: rem(40px);
+    color: #465f73;
+    flex-direction: column;
+
+    @include for-wide-layout {
+        flex-direction: row;
+    }
+
+    h6 {
+        font-size: 2rem;
+
+        @include for-mobile-layout {
+            font-size: 1rem;
+        }
+    }
+}

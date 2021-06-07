@@ -1,0 +1,29 @@
+.homepage {
+
+    .hero {
+        margin-bottom: rem(50px);
+        height: auto;
+
+        @include for-wide-layout {
+            height: 34vh;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+    }
+
+    .nav-funnel {
+        align-self: flex-start;
+        margin-bottom: rem(65px);
+        color: #465f73;
+
+        a:first-of-type {
+            font-weight: 700;
+        }
+    }
+
+}

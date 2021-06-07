@@ -1,0 +1,58 @@
+.donation-form {
+
+    form {
+        &>* {
+            margin-bottom: 1rem;
+
+            @include for-wide-layout {
+                margin-bottom: rem(50px);
+            }
+        }
+
+        input {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #465f73;
+            font-size: rem(40px);
+            font-weight: 700;
+        }
+    }
+
+    .donation-sum-form {
+        flex-direction: column;
+        align-items: center;
+
+        &>:first-child {
+            margin: 0;
+            padding: 0;
+            margin-bottom: 1rem;
+            
+            @include for-wide-layout {
+                margin-bottom: 0rem;
+            }
+        }
+
+        @include for-wide-layout {
+            flex-direction: row;
+        }
+    }
+
+    h3 {
+        color: #465f73;
+        font-size: rem(30px);
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+
+        @include for-wide-layout {
+            justify-content: flex-start;
+        }
+    }
+
+    .submit-btn {
+        justify-content: center;
+
+        @include for-wide-layout {
+            justify-content: flex-end;
+        }
+    }
+}

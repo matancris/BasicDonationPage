@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './assets/scss/global.scss';
+import App from './App.jsx';
 import reportWebVitals from './reportWebVitals';
+import { createGenerateClassName, StylesProvider } from '@material-ui/styles';
+
+const generateClassName = createGenerateClassName({
+  productionPrefix: 'c',
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <StylesProvider generateClassName={generateClassName} >
+      <App />
+    </StylesProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
