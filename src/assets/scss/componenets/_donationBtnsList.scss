@@ -1,6 +1,4 @@
 .btns-list {
-    justify-content: center;
-
     @include for-wide-layout {
         &.flex {
             justify-content: space-between;
@@ -11,7 +9,6 @@
         height: rem(130px);
         min-width: rem(150px);
         margin-bottom: rem(35px);
-        margin-inline-end: 0;
 
         &:nth-child(1),
         &:nth-child(3) {
@@ -41,9 +38,6 @@
                 margin-inline-end: 0;
             }
         }
-
-
-
 
         button {
             color: #465f73;

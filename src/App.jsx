@@ -3,7 +3,7 @@ import { DonationApp } from './pages/DonationApp';
 function App() {
   return (
     <div className="App">
-     <DonationApp />
+      <DonationApp />
     </div>
   );
 }
